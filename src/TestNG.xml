@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Automationexercise Test Suite" >
+    <listeners>
+        <listener class-name="utils.listeners.TestListener"/>
+        <listener class-name="utils.listeners.AnnotationTransformer"/>
+    </listeners>
+
+    <test name="CartTest">
+        <classes>
+            <class name="tests.CartTests"/>
+        </classes>
+    </test>
+    <test name="ProductsSearchTest">
+        <classes>
+            <class name="tests.ProductsSearchTests"/>
+        </classes>
+    </test>
+</suite>
